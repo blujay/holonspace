@@ -4,7 +4,7 @@ using System;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
-    public class ClonePrefab : MonoBehaviour
+    public class ClonePrefabRigid : MonoBehaviour
     {
 
         public GameObject prefab;
@@ -18,6 +18,7 @@ namespace Valve.VR.InteractionSystem.Sample
             clone.transform.rotation = spawnPoint.transform.localRotation;
             clone.transform.localScale = prefab.transform.localScale;
             clone.transform.name = prefab.name + "-Clone" + Time.time;
+            clone.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 }
