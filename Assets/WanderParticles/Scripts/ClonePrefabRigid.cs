@@ -19,6 +19,7 @@ namespace Valve.VR.InteractionSystem.Sample
             clone.transform.localScale = prefab.transform.localScale;
             clone.transform.name = prefab.name + "-Clone" + Time.time;
             clone.GetComponent<Rigidbody>().isKinematic = false;
+            clone.GetComponent<Rigidbody>().useGravity = true;
         }
     }
 }
