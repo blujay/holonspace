@@ -8,5 +8,5 @@ public class SavedItem
     public string parentPrefab;
     public Vector3 position;
     public Vector3 rotation;
-    public float scale;
+    public Vector3 scale;
 }

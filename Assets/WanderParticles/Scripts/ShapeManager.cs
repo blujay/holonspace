@@ -25,7 +25,7 @@ public class ShapeManager : MonoBehaviour
             var item = new SavedItem();
             item.position = shape.transform.position;
             item.rotation = shape.transform.eulerAngles;
-            item.scale = shape.transform.localScale.x;
+            item.scale= shape.transform.localScale;
             item.parentPrefab = shape.GetComponent<ShapeScript>().parentPrefab;
 
             saves[shape.gameObject.name] = item;
@@ -64,8 +64,7 @@ public class ShapeManager : MonoBehaviour
             {
                 shape.gameObject.transform.position = savedData[shape.gameObject.name].position;
                 shape.gameObject.transform.eulerAngles = savedData[shape.gameObject.name].rotation;
-                var scale = savedData[shape.gameObject.name].scale;
-                shape.gameObject.transform.localScale = new Vector3(scale, scale, scale);
+                shape.gameObject.transform.localScale = savedData[shape.gameObject.name].scale;
                 prefabs[shape.GetComponent<ShapeScript>().parentPrefab] = shape.transform;
             }
             
@@ -91,8 +90,7 @@ public class ShapeManager : MonoBehaviour
                  newObject.name = key;
                  newObject.transform.position = savedData[key].position;
                  newObject.transform.eulerAngles = savedData[key].rotation;
-                 var scale = savedData[key].scale;
-                 newObject.transform.localScale = new Vector3(scale, scale, scale);
+                 newObject.transform.localScale = savedData[key].scale;
              }
         }
     }

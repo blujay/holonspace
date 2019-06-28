@@ -14,14 +14,13 @@ GameObject:
   - component: {fileID: 2145149944525335366}
   - component: {fileID: 2145149944525335365}
   - component: {fileID: 2145149944525335364}
-  - component: {fileID: 5761196517300553098}
-  - component: {fileID: 2548593908874777763}
-  - component: {fileID: 7429292015690213957}
-  - component: {fileID: 4014784495175953123}
-  - component: {fileID: 1832079855002162603}
+  - component: {fileID: 7121443023897503059}
+  - component: {fileID: 1249791317143930796}
+  - component: {fileID: 917605450654409522}
+  - component: {fileID: 7064774967528432300}
   m_Layer: 0
   m_Name: leaf
-  m_TagString: shape
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3604,7 +3603,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 12
   m_Mesh: {fileID: 0}
---- !u!114 &5761196517300553098
+--- !u!114 &7121443023897503059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3655,7 +3654,7 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
---- !u!54 &2548593908874777763
+--- !u!54 &1249791317143930796
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3670,8 +3669,8 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 3
---- !u!114 &7429292015690213957
+  m_CollisionDetection: 0
+--- !u!114 &917605450654409522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3686,7 +3685,7 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
---- !u!114 &4014784495175953123
+--- !u!114 &7064774967528432300
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3698,7 +3697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachmentFlags: 62
+  attachmentFlags: 44
   attachmentOffset: {fileID: 0}
   catchingSpeedThreshold: -1
   releaseVelocityStyle: 1
@@ -3707,13 +3706,24 @@ MonoBehaviour:
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1249791317143930796}
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2548593908874777763}
+      - m_Target: {fileID: 1249791317143930796}
         m_MethodName: set_isKinematic
         m_Mode: 6
         m_Arguments:
@@ -3727,16 +3737,3 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
---- !u!114 &1832079855002162603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145149944525335371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ed852848e723245ba84aa2f9b0f39d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentPrefab: Assets/_Prefabs/watercolour/leaf.prefab
