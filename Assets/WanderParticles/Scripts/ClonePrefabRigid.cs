@@ -20,6 +20,7 @@ namespace Valve.VR.InteractionSystem.Sample
             clone.transform.name = prefab.name + "-Clone" + Time.time;
             clone.GetComponent<Rigidbody>().isKinematic = false;
             clone.GetComponent<Rigidbody>().useGravity = true;
+            clone.transform.parent = spawnPoint.parent.transform;
         }
     }
 }
