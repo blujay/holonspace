@@ -1,6 +1,0 @@
-newmtl New_Material
-map_Kd net-texture.png
-bump wc-normal-1.jpg
-Kd 1 1 1
-d 1
-
