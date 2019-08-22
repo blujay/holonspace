@@ -17,7 +17,7 @@ namespace Valve.VR.InteractionSystem.Sample
             clone.transform.position = (spawnPoint.position);
             clone.transform.rotation = spawnPoint.transform.localRotation;
             clone.transform.localScale = prefab.transform.localScale;
-            clone.transform.name = prefab.name + "-(Clone)-" + Time.time;
+            clone.transform.name = prefab.name + "(Clone)" + Time.time;
         }
     }
 }

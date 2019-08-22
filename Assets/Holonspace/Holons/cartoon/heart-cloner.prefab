@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522472688091023295}
-  m_LocalRotation: {x: -0.0000006853862, y: 0.9822667, z: 0.00000025587894, w: -0.1874891}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5749804, y: 0.57498026, z: 0.5749806}
   m_Children: []
@@ -1447,9 +1447,8 @@ GameObject:
   - component: {fileID: 7429954399311471156}
   - component: {fileID: 7429954399311471159}
   - component: {fileID: 7429954399311471161}
-  - component: {fileID: 6239481919104804193}
   m_Layer: 0
-  m_Name: heart-cloner 1
+  m_Name: heart-cloner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1483,7 +1482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93311356b02f5a44baba18db66fe8d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8231569662114136841, guid: a8cb1da2eedb56247ae2f3d3a3dad01d, type: 3}
+  prefab: {fileID: 7898603898523644353, guid: cdee4218630f599478c2068ad553534f, type: 3}
   spawnPoint: {fileID: 5732233171911852968}
 --- !u!114 &7429954399311471157
 MonoBehaviour:
@@ -1608,21 +1607,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
---- !u!114 &6239481919104804193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7429954399311471163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c07ad1d83a15042bc1ef37bc4e03c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guid: 
-  decoratorComponents:
-  - {fileID: 7429954399311471158}
 --- !u!1001 &7992468032448542267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1690,8 +1674,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1772189537833960762, guid: e69d44c91858bda4594d565e2dee4de8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69d44c91858bda4594d565e2dee4de8, type: 3}
 --- !u!4 &5732233171911852968 stripped
 Transform:

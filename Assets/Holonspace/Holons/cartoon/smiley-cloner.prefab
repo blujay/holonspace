@@ -1193,7 +1193,6 @@ GameObject:
   - component: {fileID: 5246472745717077015}
   - component: {fileID: 5246472745717077012}
   - component: {fileID: 5246472745717077018}
-  - component: {fileID: 8738285906769040194}
   m_Layer: 0
   m_Name: smiley-cloner
   m_TagString: Untagged
@@ -1229,7 +1228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93311356b02f5a44baba18db66fe8d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 140914230372526643, guid: 1d22d533df4dd0f4faf01966be6ebc94, type: 3}
+  prefab: {fileID: 4694607328696277213, guid: a2559c7d96987a640aba21740e35bc80, type: 3}
   spawnPoint: {fileID: 6944353476440225163}
 --- !u!114 &5246472745717077014
 MonoBehaviour:
@@ -1354,21 +1353,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
---- !u!114 &8738285906769040194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5246472745717077016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c07ad1d83a15042bc1ef37bc4e03c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guid: c2634ee84553c5c44bda4112c53a4856
-  decoratorComponents:
-  - {fileID: 5246472745717077013}
 --- !u!1001 &4699862827407573016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1436,8 +1420,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1772189537833960762, guid: e69d44c91858bda4594d565e2dee4de8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69d44c91858bda4594d565e2dee4de8, type: 3}
 --- !u!4 &6944353476440225163 stripped
 Transform:
