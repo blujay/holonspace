@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class RuntimePersistence : MonoBehaviour
 {
@@ -60,7 +63,10 @@ public class RuntimePersistence : MonoBehaviour
             var holons = Object.FindObjectsOfType<PersistentHolon>();
 
             foreach(var holon in holons){
-                DestroyImmediate(holon.gameObject);
+                if(holon.transform.parent && holon.transform.parent.gameObject.GetComponentInParent<PersistentHolon>()){
+                    continue;
+                }
+                if(holon) DestroyImmediate(holon.gameObject);
             }
 
             foreach(var holonData in storage.GetHolons()){
