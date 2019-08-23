@@ -13,7 +13,7 @@ public class RuntimePersistantStorage : ScriptableObject {
         holons.Add( new HolonData(){
             name = holon.name,
             guid = holon.GetPrefabGUID(),
-            decoratorData = holon.GetDecoratorData()
+            decoratorData = holon.GetDecoratorData(),
         });
     }
 
@@ -34,4 +34,5 @@ public class HolonData {
     public string guid;
 
     public string[] decoratorData;
+
 }

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -15,7 +17,6 @@ public class RuntimePersistence : MonoBehaviour
     }
 
     void Start(){
-        
     }
 
     void Update(){
@@ -43,7 +44,8 @@ public class RuntimePersistence : MonoBehaviour
             var holons = Object.FindObjectsOfType<PersistentHolon>();
             storage.ClearHolons();
             foreach(var holon in holons){
-                
+                bool isNestedPrefab = (holon.transform.parent && holon.transform.parent.gameObject.GetComponentInParent<PersistentHolon>());
+                                
                 storage.AddHolon( holon );
             }
 
@@ -81,9 +83,13 @@ public class RuntimePersistence : MonoBehaviour
                 prefabInstance.name = holonData.name;
                 var gameObject = prefabInstance as GameObject;
                 gameObject.GetComponent<PersistentHolon>().SetDecoratorData( holonData.decoratorData );
+                EditorSceneManager.MarkAllScenesDirty();
             }
         }
+
         
     }
     #endif 
+
 }
+
