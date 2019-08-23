@@ -21,7 +21,7 @@ public class HolonPrefabProcessing : UnityEditor.AssetPostprocessor
                 var holon = gameObjectAsset.GetComponent<PersistentHolon>();
                 if(holon){
                     Debug.Log("setting guid");
-                    holon.SetPrefabGUID(guid);
+                     holon.SetPrefabGUID(guid);
                 }
                 AssetDatabase.SaveAssets();
             }

@@ -11,14 +11,49 @@ public class PersistentHolon : MonoBehaviour {
     [SerializeField]
     Component[] decoratorComponents;
 
-    private void OnValidate()
-    {
+#if UNITY_EDITOR
+    private void OnValidate(){
         //Debug.Log("validate");
         //var prefab = UnityEditor.PrefabUtility.GetPrefabInstanceHandle( gameObject );
         //Debug.Log(prefab);
         //Debug.Log( UnityEditor.PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(gameObject) );
-        
+        UpdateGUID();
     }
+
+
+    private void Reset(){
+        var prefab = UnityEditor.PrefabUtility.GetPrefabInstanceHandle( gameObject );
+        if(prefab){
+            UpdateGUID();
+        } else {
+            Debug.LogWarning("GameObject is currently not prefab");
+        }
+    }
+
+    private void UpdateGUID(){
+        
+        if(Application.isPlaying)
+            return;
+
+        var path = UnityEditor.PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(gameObject);
+        
+        string tmpGuid = UnityEditor.AssetDatabase.AssetPathToGUID(path);
+        if(guid==tmpGuid){
+            return;
+        }
+        guid = tmpGuid;
+
+        Debug.LogFormat("Setting guid for {0} to {1}, prefab path {2}", name, guid, path);
+
+        if(!UnityEditor.PrefabUtility.IsPartOfPrefabAsset(gameObject)){
+            UnityEditor.PrefabUtility.ApplyPrefabInstance(gameObject,UnityEditor.InteractionMode.AutomatedAction);
+        }
+        else {
+            UnityEditor.AssetDatabase.SaveAssets();
+        }
+    }
+
+#endif
 
     public void SetPrefabGUID(string GUID){
         this.guid = GUID;
