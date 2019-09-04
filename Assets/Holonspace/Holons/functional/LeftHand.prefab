@@ -1,0 +1,286 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4845132075155201128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4845132075155485704}
+  - component: {fileID: 4845132075161252742}
+  m_Layer: 0
+  m_Name: ControllerHoverHighlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4845132075155485704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845132075155201128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0100001, y: 1.01, z: 1.0100001}
+  m_Children: []
+  m_Father: {fileID: 4845132075155575902}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4845132075161252742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845132075155201128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca2cc563cc33f542a5d9f8f661184ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highLightMaterial: {fileID: 2100000, guid: 7b939e5e799d98a469f594828ebab52e, type: 2}
+  fireHapticsOnHightlight: 1
+--- !u!1 &4845132075155203436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4845132075155513006}
+  - component: {fileID: 4845132075161350674}
+  m_Layer: 26
+  m_Name: ControllerButtonHints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4845132075155513006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845132075155203436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4845132075155575902}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4845132075161350674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845132075155203436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1001a6626353541ab4d4b39f4c3569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerMaterial: {fileID: 2100000, guid: 11b050e661ec0cf48a289a7266451e91, type: 2}
+  flashColor: {r: 1, g: 0.9170069, b: 0.453, a: 0.709}
+  textHintPrefab: {fileID: 140952, guid: 5fa42bb9e52706a42b8a1eaf0b54326a, type: 3}
+  hapticFlash:
+    actionPath: /actions/default/out/Haptic
+    needsReinit: 0
+  debugHints: 0
+--- !u!1 &4845132075155235396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4845132075155575902}
+  - component: {fileID: 4845132075161233130}
+  - component: {fileID: 4803194124685702836}
+  m_Layer: 26
+  m_Name: LeftHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4845132075155575902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845132075155235396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4842328437261459578}
+  - {fileID: 4842328436283980014}
+  - {fileID: 4845132075155485704}
+  - {fileID: 4845132075155513006}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4845132075161233130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845132075155235396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  twoHandGrab: 0
+  otherHand: {fileID: 0}
+  handType: 1
+  trackedObject: {fileID: 0}
+  grabPinchAction:
+    actionPath: /actions/default/in/GrabPinch
+    needsReinit: 0
+  grabGripAction:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
+  hapticAction:
+    actionPath: /actions/default/out/Haptic
+    needsReinit: 0
+  uiInteractAction:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  useHoverSphere: 1
+  hoverSphereTransform: {fileID: 4842328437261459578}
+  hoverSphereRadius: 0.075
+  hoverLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hoverUpdateInterval: 0.1
+  useControllerHoverComponent: 1
+  controllerHoverComponent: tip
+  controllerHoverRadius: 0.15
+  useFingerJointHover: 1
+  fingerJointHover: 10
+  fingerJointHoverRadius: 0.05
+  objectAttachmentPoint: {fileID: 4842328436283980014}
+  noSteamVRFallbackCamera: {fileID: 0}
+  noSteamVRFallbackMaxDistanceNoItem: 10
+  noSteamVRFallbackMaxDistanceWithItem: 0.5
+  renderModelPrefab: {fileID: 1000011547835092, guid: d5082f7d9f947374197e0a97786f4e40,
+    type: 3}
+  showDebugText: 0
+  spewDebugText: 0
+  showDebugInteractables: 0
+--- !u!114 &4803194124685702836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845132075155235396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5fb0ca93b55ef4b8d54b512b103341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poseAction:
+    actionPath: /actions/default/in/Pose
+    needsReinit: 0
+  inputSource: 1
+  origin: {fileID: 0}
+  onTransformUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Valve.VR.SteamVR_Behaviour_PoseEvent, SteamVR, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTransformChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Valve.VR.SteamVR_Behaviour_PoseEvent, SteamVR, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onConnectedChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Valve.VR.SteamVR_Behaviour_Pose_ConnectedChangedEvent, SteamVR, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTrackingChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Valve.VR.SteamVR_Behaviour_Pose_TrackingChangedEvent, SteamVR, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDeviceIndexChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Valve.VR.SteamVR_Behaviour_Pose_DeviceIndexChangedEvent, SteamVR,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  broadcastDeviceChanges: 1
+--- !u!1 &4845539438529989006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4842328436283980014}
+  m_Layer: 26
+  m_Name: ObjectAttachmentPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4842328436283980014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845539438529989006}
+  m_LocalRotation: {x: 0.32650566, y: -0.21263102, z: 0.6272114, w: 0.67437977}
+  m_LocalPosition: {x: 0.051999986, y: -0.0157, z: -0.11630082}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4845132075155575902}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 135, y: -170, z: -90}
+--- !u!1 &4845539438758033624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4842328437261459578}
+  m_Layer: 26
+  m_Name: HoverPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4842328437261459578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845539438758033624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.051999986, y: -0.015699983, z: -0.11630082}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4845132075155575902}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
