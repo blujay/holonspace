@@ -93,7 +93,7 @@ namespace Valve.VR.InteractionSystem
 
                 GrabTypes bestGrabType = hand.GetBestGrabbingType();
 
-                if ( bestGrabType != GrabTypes.None )
+                if ( bestGrabType == GrabTypes.Pinch )
 				{
 					if (rigidbody.velocity.magnitude >= catchingThreshold)
 					{
@@ -122,7 +122,7 @@ namespace Valve.VR.InteractionSystem
         {
             GrabTypes startingGrabType = hand.GetGrabStarting();
             
-            if (startingGrabType != GrabTypes.None)
+            if (startingGrabType == GrabTypes.Pinch)
             {
 				hand.AttachObject( gameObject, startingGrabType, attachmentFlags, attachmentOffset );
                 hand.HideGrabHint();

@@ -2084,11 +2084,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3572119893192167348, guid: 20ad0f0709e46d8449e0b6f45ea79c91,
-        type: 3}
-      propertyPath: attachmentFlags
-      value: 44
-      objectReference: {fileID: 0}
     - target: {fileID: 4427644355622216235, guid: 20ad0f0709e46d8449e0b6f45ea79c91,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2164,6 +2159,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1377711584}
+    - target: {fileID: 3572119893192167348, guid: 20ad0f0709e46d8449e0b6f45ea79c91,
+        type: 3}
+      propertyPath: attachmentFlags
+      value: 44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20ad0f0709e46d8449e0b6f45ea79c91, type: 3}
 --- !u!43 &300409531
@@ -12315,7 +12315,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.9528302, g: 0.78324014, b: 0.0764062, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.99
   m_Range: 5.85
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -12384,7 +12384,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.06274474, g: 0.8867924, b: 0.84519655, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.99
   m_Range: 5.85
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -12453,7 +12453,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.9245283, g: 0.23985407, b: 0.53291386, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.99
   m_Range: 5.85
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -20687,7 +20687,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.048949808, g: 0.68167317, b: 0.9433962, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.99
   m_Range: 5.85
   m_SpotAngle: 30
   m_CookieSize: 10
