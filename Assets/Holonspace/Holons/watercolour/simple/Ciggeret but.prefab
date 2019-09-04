@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4567275129889320463}
   - component: {fileID: 1946926984194254793}
   - component: {fileID: 1258857864627170963}
+  - component: {fileID: 1729241996}
   m_Layer: 0
   m_Name: Ciggeret but
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 8711271286605428802}
   m_LocalRotation: {x: 0.00000019861236, y: -0.7071068, z: 0.70710677, w: 0.00000019861234}
   m_LocalPosition: {x: -0.74736, y: 1.2824, z: -0.85008}
-  m_LocalScale: {x: 0.06179766, y: 0.06179766, z: 0.06179766}
+  m_LocalScale: {x: 0.061797652, y: 0.06179766, z: 0.061797656}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1650,3 +1651,19 @@ MonoBehaviour:
   guid: 
   decoratorComponents:
   - {fileID: 8711271286605428824}
+--- !u!114 &1729241996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8711271286605428802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9e183cbafdbea4690151b070c92a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloneAction:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
+  hand: {fileID: 0}

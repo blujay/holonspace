@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4174279305859377772}
   - component: {fileID: 6125221961180246334}
   - component: {fileID: 8579747932411750285}
+  - component: {fileID: 180847375728903938}
   m_Layer: 0
   m_Name: openSign
   m_TagString: Untagged
@@ -728,3 +729,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &180847375728903938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3745626386977380634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9e183cbafdbea4690151b070c92a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloneAction:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
+  hand: {fileID: 0}
