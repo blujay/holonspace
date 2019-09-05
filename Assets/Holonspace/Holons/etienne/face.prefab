@@ -36,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 6134543242360719460}
   m_LocalRotation: {x: 0.00000019861236, y: -0.7071068, z: 0.70710677, w: 0.00000019861234}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5602, y: 1.5602, z: 1.5602}
+  m_LocalScale: {x: 1.5602102, y: 1.5602064, z: 1.5602093}
   m_Children:
   - {fileID: 6134543243712164839}
   m_Father: {fileID: 0}
@@ -6253,7 +6253,6 @@ MonoBehaviour:
   cloneAction:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
-  hand: {fileID: 0}
 --- !u!114 &6134543242360719459
 MonoBehaviour:
   m_ObjectHideFlags: 0
