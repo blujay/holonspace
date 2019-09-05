@@ -15,6 +15,7 @@ public class RuntimePersistence : MonoBehaviour
     public RuntimePersistantStorage GetStorage(){
         return storage;
     }
+    Transform holonParent;
 
     void Start(){
     }
