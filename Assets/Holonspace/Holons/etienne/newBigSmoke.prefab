@@ -34,13 +34,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762460858890629093}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalRotation: {x: 0.00000019861236, y: -0.7071068, z: 0.70710677, w: 0.00000019861234}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3829, y: 2.3829, z: 2.3829}
+  m_LocalScale: {x: 3.3736947, y: 3.373689, z: 3.3736916}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 179.99998}
 --- !u!114 &1762460858890629090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8006,4 +8006,3 @@ MonoBehaviour:
   cloneAction:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
-  hand: {fileID: 0}

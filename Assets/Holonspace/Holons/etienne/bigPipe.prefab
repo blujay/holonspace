@@ -2074,4 +2074,3 @@ MonoBehaviour:
   cloneAction:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
-  hand: {fileID: 0}

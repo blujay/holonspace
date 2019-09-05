@@ -35,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 3497314449639361183}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.2471, z: 1}
+  m_LocalScale: {x: 1, y: 0.24710011, z: 1.0000004}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -940,4 +940,3 @@ MonoBehaviour:
   cloneAction:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
-  hand: {fileID: 0}
