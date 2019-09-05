@@ -99,7 +99,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f1759da62185b234cbc2f580fd67be23, type: 2}
+  - {fileID: 2100000, guid: 1b44e3e33a22da54bb76dab1c80e9f65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1140,7 +1140,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f1759da62185b234cbc2f580fd67be23, type: 2}
+  - {fileID: 2100000, guid: 1b44e3e33a22da54bb76dab1c80e9f65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2935,6 +2935,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloneAction:
-    actionPath: 
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   hand: {fileID: 0}

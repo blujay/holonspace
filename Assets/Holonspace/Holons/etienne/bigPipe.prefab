@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4917456767714701747}
   - component: {fileID: 974274080303877988}
   - component: {fileID: 30927166422756751}
+  - component: {fileID: 255610759}
   m_Layer: 0
   m_Name: bigPipe
   m_TagString: Untagged
@@ -1929,101 +1930,9 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 01000000
-  m_SelectedEdges:
-  - a: 91
-    b: 90
-  - a: 89
-    b: 91
-  - a: 90
-    b: 88
-  - a: 55
-    b: 89
-  - a: 88
-    b: 54
-  - a: 62
-    b: 87
-  - a: 87
-    b: 57
-  - a: 67
-    b: 86
-  - a: 86
-    b: 73
-  - a: 85
-    b: 81
-  - a: 84
-    b: 85
-  - a: 80
-    b: 84
-  - a: 83
-    b: 82
-  - a: 81
-    b: 83
-  - a: 82
-    b: 79
-  - a: 76
-    b: 80
-  - a: 79
-    b: 77
-  - a: 78
-    b: 72
-  - a: 77
-    b: 78
-  - a: 75
-    b: 76
-  - a: 74
-    b: 75
-  - a: 73
-    b: 74
-  - a: 72
-    b: 65
-  - a: 68
-    b: 71
-  - a: 71
-    b: 70
-  - a: 70
-    b: 67
-  - a: 63
-    b: 69
-  - a: 69
-    b: 68
-  - a: 66
-    b: 64
-  - a: 65
-    b: 66
-  - a: 64
-    b: 62
-  - a: 58
-    b: 63
-  - a: 56
-    b: 61
-  - a: 61
-    b: 59
-  - a: 59
-    b: 60
-  - a: 60
-    b: 58
-  - a: 57
-    b: 55
-  - a: 53
-    b: 56
-  - a: 54
-    b: 52
-  - a: 50
-    b: 53
-  - a: 52
-    b: 51
-  - a: 51
-    b: 49
-  - a: 48
-    b: 50
-  - a: 49
-    b: 47
-  - a: 47
-    b: 46
-  - a: 46
-    b: 48
-  m_SelectedVertices: 5b0000005a00000059000000580000003700000036000000390000003e000000570000004300000056000000490000005500000051000000540000005000000053000000520000004f0000004c0000004d0000004e000000480000004b0000004a000000410000004400000047000000460000003f0000004500000042000000400000003a0000003b000000380000003d0000003c0000003500000034000000320000003300000031000000300000002f0000002e000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!64 &4655808894859774733
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2150,3 +2059,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &255610759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4655808894859774732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9e183cbafdbea4690151b070c92a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloneAction:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
+  hand: {fileID: 0}
