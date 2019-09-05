@@ -10,7 +10,7 @@ namespace Valve.VR.InteractionSystem.Sample
     {   
         public SteamVR_Action_Boolean cloneAction;
 
-        public Hand hand;
+        private Hand hand;
         
         //public GameObject prefab;
         //public Transform spawnPoint;
@@ -18,7 +18,19 @@ namespace Valve.VR.InteractionSystem.Sample
         private void OnEnable()
         {
             if (hand == null)
-                hand = this.GetComponent<Hand>();
+            {
+                var hands = FindObjectsOfType<Hand>();
+                foreach (var h in hands)
+                {
+                    if (h.handType==SteamVR_Input_Sources.RightHand)
+                    {
+                        hand = h;
+                        break;
+                    }
+                }
+
+
+            }
 
             if (cloneAction == null)
             {

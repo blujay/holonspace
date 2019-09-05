@@ -1428,6 +1428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloneAction:
-    actionPath: 
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   hand: {fileID: 0}
