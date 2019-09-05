@@ -13,6 +13,6 @@ public class spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate (0,0.5f,0*Time.deltaTime); //rotates 50 degrees per second around y axis
+        transform.Rotate (0,0,0.3f*Time.deltaTime); //rotates 50 degrees per second around y axis
     }
 }
