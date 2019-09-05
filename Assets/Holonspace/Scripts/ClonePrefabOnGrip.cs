@@ -11,6 +11,7 @@ namespace Valve.VR.InteractionSystem.Sample
         public SteamVR_Action_Boolean cloneAction;
 
         private Hand hand;
+        private Transform parentObj;
         
         //public GameObject prefab;
         //public Transform spawnPoint;
@@ -53,16 +54,19 @@ namespace Valve.VR.InteractionSystem.Sample
 
         public void Clone()
         {
+            parentObj = this.transform.parent;
             GrabTypes startingGrabType = hand.GetGrabStarting();
             if (startingGrabType == GrabTypes.Grip)
             {
                 if (hand.hoveringInteractable.gameObject==this.gameObject)
                 {
+                    
                     GameObject clone = GameObject.Instantiate<GameObject>(gameObject);
                     clone.transform.position = (transform.position);
                     clone.transform.rotation = transform.localRotation;
                     clone.transform.localScale = transform.localScale;
                     clone.transform.name = gameObject.name + "(Clone)";
+                    clone.transform.SetParent(parentObj, false);
                 }
             }
         }
