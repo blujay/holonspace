@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: 3911752165086783790}
   - component: {fileID: 4548980288008206661}
   - component: {fileID: 4548980288008206662}
-  - component: {fileID: 2415347664894441837}
   - component: {fileID: 793044704615393314}
   - component: {fileID: 925792394781033184}
   - component: {fileID: 3062716703781274135}
   - component: {fileID: 4363606965304793497}
+  - component: {fileID: 2415347664894441837}
   m_Layer: 0
   m_Name: bigSmoke
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 4548980288008206663}
   m_LocalRotation: {x: 0.00000019861236, y: -0.7071068, z: 0.70710677, w: 0.00000019861234}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4.0578, y: 4.0578, z: 4.0578}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -5937,22 +5937,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &2415347664894441837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4548980288008206663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f9e183cbafdbea4690151b070c92a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cloneAction:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
-  hand: {fileID: 0}
 --- !u!114 &793044704615393314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6065,3 +6049,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &2415347664894441837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548980288008206663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9e183cbafdbea4690151b070c92a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloneAction:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
+  hand: {fileID: 0}
