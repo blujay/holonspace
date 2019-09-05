@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.wanderparticles.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Root Interactive\\Documents\\Unity\\Holonspace\\actions.json",
+      "action_manifest_path": "C:\\Users\\GOVR Gold\\Documents\\Unity Projects\\holonspace\\actions.json",
       "strings": {
         "en_us": {
           "name": "wanderparticles [Testing]"
