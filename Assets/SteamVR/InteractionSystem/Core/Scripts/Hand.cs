@@ -704,7 +704,7 @@ namespace Valve.VR.InteractionSystem
                 if (twoHandGrab)
                 {
                     twoHandGrab = false;
-                    otherHand.AttachObject(prevTopObject, otherHand.GetBestGrabbingType(GrabTypes.None));
+                    //otherHand.AttachObject(prevTopObject, otherHand.GetBestGrabbingType(GrabTypes.None));
                 }
 
                 GameObject newTopObject = currentAttachedObject;
@@ -825,6 +825,8 @@ namespace Valve.VR.InteractionSystem
                 if (trackedObject != null)
                     trackedObject.onTransformUpdatedEvent += OnTransformUpdated;
             }
+            trackedObject.onTransformUpdatedEvent += TwoHandGrabbingUpdate;
+            
         }
 
         protected virtual void OnDestroy()
@@ -839,9 +841,6 @@ namespace Valve.VR.InteractionSystem
         protected virtual void OnTransformUpdated(SteamVR_Behaviour_Pose updatedPose, SteamVR_Input_Sources updatedSource)
         {
             HandFollowUpdate();
-            trackedObject.onTransformUpdatedEvent += TwoHandGrabbingUpdate;
-
-
         }
 
         //-------------------------------------------------
