@@ -698,13 +698,13 @@ namespace Valve.VR.InteractionSystem
                 if (otherHand.twoHandGrab)
                 {
                     otherHand.twoHandGrab = false;
-                    otherHand.AttachObject(otherHand.currentAttachedObject, otherHand.GetBestGrabbingType(GrabTypes.None));
+                    otherHand.AttachObject(otherHand.currentAttachedObject, otherHand.GetBestGrabbingType(GrabTypes.None), AttachmentFlags.ParentToHand);
                 }
 
                 if (twoHandGrab)
                 {
                     twoHandGrab = false;
-                    //otherHand.AttachObject(prevTopObject, otherHand.GetBestGrabbingType(GrabTypes.None));
+                    otherHand.AttachObject(prevTopObject, otherHand.GetBestGrabbingType(GrabTypes.None), AttachmentFlags.ParentToHand);
                 }
 
                 GameObject newTopObject = currentAttachedObject;
