@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1954183530620574193}
   m_LocalRotation: {x: -0.00000005960464, y: -2.0428104e-14, z: -0.00000026322658,
     w: -1}
-  m_LocalPosition: {x: -0.528, y: -0.0006, z: 0.07}
+  m_LocalPosition: {x: -0.063, y: -0.043, z: 0.047}
   m_LocalScale: {x: 5.011867, y: 92.91538, z: 6.510416}
   m_Children: []
   m_Father: {fileID: 7961387426142492089}
@@ -687,7 +687,7 @@ Transform:
   m_GameObject: {fileID: 2497729061928202960}
   m_LocalRotation: {x: -0.00000005960464, y: -1.1990409e-14, z: -0.00000026640487,
     w: -1}
-  m_LocalPosition: {x: -0.058, y: -0.0006, z: 0.04}
+  m_LocalPosition: {x: 0.407, y: -0.043, z: 0.017}
   m_LocalScale: {x: 5.011867, y: 58.62169, z: 6.510416}
   m_Children: []
   m_Father: {fileID: 7961387426142492089}
@@ -1345,7 +1345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7961387425036282034}
   m_LocalRotation: {x: -0, y: -0, z: 0.71481144, w: 0.6993173}
-  m_LocalPosition: {x: -0.93621624, y: 0.03320319, z: -0.005313966}
+  m_LocalPosition: {x: -0.471, y: -0.009, z: -0.028}
   m_LocalScale: {x: 6.509698, y: 5.012586, z: 6.510417}
   m_Children: []
   m_Father: {fileID: 7961387426142492089}
@@ -2163,7 +2163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7961387425351305534}
   m_LocalRotation: {x: -0, y: -0, z: 0.71481144, w: 0.6993173}
-  m_LocalPosition: {x: -0.004009261, y: 0.03320319, z: -0.005313966}
+  m_LocalPosition: {x: 0.461, y: -0.009, z: -0.028}
   m_LocalScale: {x: 6.509698, y: 5.012586, z: 6.510417}
   m_Children: []
   m_Father: {fileID: 7961387426142492089}
@@ -2934,7 +2934,6 @@ GameObject:
   - component: {fileID: 6200303194668303765}
   - component: {fileID: 4124177921100808238}
   - component: {fileID: 2832818672649459428}
-  - component: {fileID: 728399389789532328}
   - component: {fileID: 413644270385602868}
   m_Layer: 0
   m_Name: sunglasses-gravity
@@ -2950,8 +2949,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7961387426142492094}
-  m_LocalRotation: {x: 0.6698274, y: -0.30118242, z: 0.2952205, w: 0.61111814}
-  m_LocalPosition: {x: 1.1122, y: 0.69138, z: -1.8332}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6114072, y: 0.42586, z: 0.42586}
   m_Children:
   - {fileID: 7961387426401829303}
@@ -2961,7 +2960,7 @@ Transform:
   - {fileID: 4169878773832520583}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 94.78299, y: -19.168, z: 30.765}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &5168419913192645291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3070,7 +3069,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413644270385602868}
+        m_MethodName: attachGlassesToHead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
@@ -3089,21 +3099,6 @@ MonoBehaviour:
   cloneAction:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
---- !u!114 &728399389789532328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7961387426142492094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c07ad1d83a15042bc1ef37bc4e03c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guid: 
-  decoratorComponents:
-  - {fileID: 7961387426142492089}
 --- !u!114 &413644270385602868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,8 +3111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6039382957edd8049993fe6dc0e791fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad:
-    m_Handle: 0
+  sceneToLoad: 
+  headset: {fileID: 0}
 --- !u!1 &7961387426401829305
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,7 +3142,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7961387426401829305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.465, y: -0.042, z: -0.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7961387426142492089}
