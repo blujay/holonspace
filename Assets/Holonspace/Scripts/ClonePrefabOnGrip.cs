@@ -64,7 +64,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     clone.transform.position = (transform.position);
                     clone.transform.rotation = transform.localRotation;
                     clone.transform.localScale = transform.localScale;
-                    clone.transform.name = gameObject.name + "(Clone)";
+                    clone.transform.name = gameObject.name + "(Clone)";f
                 }
             }
         }

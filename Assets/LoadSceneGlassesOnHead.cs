@@ -26,7 +26,10 @@ void Start()
 
     private void OnTriggerExit(Collider other)
     {
-       dettachGlassesFromHead();
+        if(other.name == "headset"){
+           Debug.Log("detached from head");
+           dettachGlassesFromHead();
+       }
     }
 
     private void attachGlassesToHead()
