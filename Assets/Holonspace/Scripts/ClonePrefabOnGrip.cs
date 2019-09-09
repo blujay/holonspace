@@ -54,7 +54,6 @@ namespace Valve.VR.InteractionSystem.Sample
 
         public void Clone()
         {
-            parentObj = this.transform.parent;
             GrabTypes startingGrabType = hand.GetGrabStarting();
             if (startingGrabType == GrabTypes.Grip)
             {
@@ -66,7 +65,6 @@ namespace Valve.VR.InteractionSystem.Sample
                     clone.transform.rotation = transform.localRotation;
                     clone.transform.localScale = transform.localScale;
                     clone.transform.name = gameObject.name + "(Clone)";
-                    clone.transform.SetParent(parentObj, false);
                 }
             }
         }
