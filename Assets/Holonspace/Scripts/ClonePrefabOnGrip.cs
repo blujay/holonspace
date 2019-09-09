@@ -18,6 +18,9 @@ namespace Valve.VR.InteractionSystem.Sample
         
         private void OnEnable()
         {
+            // TODO AndyB
+            //cloneAction = SteamVR_Input.GetActions<SteamVR_Action_Boolean>()[0];
+
             if (hand == null)
             {
                 var hands = FindObjectsOfType<Hand>();
@@ -65,6 +68,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     clone.transform.rotation = transform.localRotation;
                     clone.transform.localScale = transform.localScale;
                     clone.transform.name = gameObject.name + "(Clone)";
+                    hand.AttachObject(clone, hand.GetBestGrabbingType(GrabTypes.None), Hand.AttachmentFlags.ParentToHand);
                 }
             }
         }
