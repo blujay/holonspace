@@ -7,15 +7,16 @@ public class sceneChangeOnTrigger : MonoBehaviour
 {
 
 public string sceneToLoad;
-//public string homeScene;
+public string activeScene;
 //public Transform headset;
-
 
 
     private void OnTriggerEnter(Collider other){
         Debug.Log("Just been hit by " + other.name);
+        Debug.Log("active scene = " + activeScene);
         if(other.gameObject.name == "HeadCollider"){
-            SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
+            SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync(activeScene);
         }
     }
    
