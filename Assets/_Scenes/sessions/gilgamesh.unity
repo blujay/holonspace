@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 144484606}
   - component: {fileID: 144484605}
   - component: {fileID: 144484604}
+  - component: {fileID: 144484610}
   m_Layer: 0
   m_Name: gilgamesh_book
   m_TagString: Untagged
@@ -462,6 +463,19 @@ Transform:
   m_Father: {fileID: 188263191}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 88.031006, y: 90.00001, z: -90.00001}
+--- !u!65 &144484610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144484603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.73568827, y: 0.15926602, z: 0.62992513}
+  m_Center: {x: -0.3549824, y: 0.07963301, z: 0.3123914}
 --- !u!1 &188263185
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +893,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33526
+  m_Name: pb_Mesh32716
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2776,10 +2790,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 125964, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2827,6 +2837,10 @@ PrefabInstance:
     - target: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_ForceIntoRT
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 125964, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9215702, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}

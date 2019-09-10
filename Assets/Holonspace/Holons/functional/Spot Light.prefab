@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 6052710891430241096}
   - component: {fileID: 6789543553495123147}
   - component: {fileID: 156818361355980374}
+  - component: {fileID: 720372146}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -128,7 +129,7 @@ Transform:
   - {fileID: 7527097553221312648}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &4519642685334116735
 Light:
   m_ObjectHideFlags: 0
@@ -305,3 +306,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+--- !u!114 &720372146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3638114825292809351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9e183cbafdbea4690151b070c92a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloneAction:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
