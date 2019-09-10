@@ -625,6 +625,15 @@ namespace Valve.VR.InteractionSystem
                     HandDebugLog("DetachObject " + objectToDetach);
 
                 GameObject prevTopObject = currentAttachedObject;
+                
+                // We assume all colliders on interactables are non-triggers
+                // Therefore we can safely set isTrigger to false to undo the change we made when cloning objects.
+                foreach (var collider in prevTopObject.GetComponents<Collider>()) {
+                    collider.isTrigger = false;
+                }
+                foreach (var collider in prevTopObject.GetComponentsInChildren<Collider>()) {
+                    collider.isTrigger = false;
+                }
 
 
                 if (attachedObjects[index].interactable != null)
