@@ -67,19 +67,19 @@ namespace Valve.VR.InteractionSystem.Sample
                     clone.transform.position = (transform.position);
                     clone.transform.rotation = transform.localRotation;
                     clone.transform.localScale = transform.localScale;
-                    
+
                     // Prevent cloned objects colliding with original.
-                    // This assumes that no colliders in the clonable's hierarchy are already triggers.
+                    // This assumes that all gameobjects in the clonable's hierarchy are on the default layer
                     // We undo this in Hand.DetachObject()
                     // Hacky! We probably need to keep track of the entire "isTrigger" status for the cloned
                     // objects hierarchy but that seems like a lot of effort.
-                    foreach (var collider in clone.GetComponents<Collider>()) {
-                        collider.isTrigger = true;
+                    clone.layer = LayerMask.NameToLayer("Cloning");
+                    foreach (var go in clone.GetComponentsInChildren<Transform>())
+                    {
+                        go.gameObject.layer = LayerMask.NameToLayer("Cloning");
                     }
-                    foreach (var collider in clone.GetComponentsInChildren<Collider>()) {
-                        collider.isTrigger = true;
-                    }
-                    //clone.transform.name = gameObject.name ;
+
+                    //clone.transform.name = gameObject.name;
                     hand.AttachObject(clone, hand.GetBestGrabbingType(GrabTypes.None), Hand.AttachmentFlags.ParentToHand);
                 }
             }

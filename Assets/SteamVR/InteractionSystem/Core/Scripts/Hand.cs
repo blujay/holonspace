@@ -626,15 +626,14 @@ namespace Valve.VR.InteractionSystem
 
                 GameObject prevTopObject = currentAttachedObject;
                 
-                // We assume all colliders on interactables are non-triggers
+                
+                // We assume all grabbale gameobjects were on the default layer originally.
                 // Therefore we can safely set isTrigger to false to undo the change we made when cloning objects.
-                foreach (var collider in prevTopObject.GetComponents<Collider>()) {
-                    collider.isTrigger = false;
+                prevTopObject.layer = LayerMask.NameToLayer("Default");
+                foreach (var go in prevTopObject.GetComponentsInChildren<Transform>())
+                {
+                    go.gameObject.layer = LayerMask.NameToLayer("Default");
                 }
-                foreach (var collider in prevTopObject.GetComponentsInChildren<Collider>()) {
-                    collider.isTrigger = false;
-                }
-
 
                 if (attachedObjects[index].interactable != null)
                 {
