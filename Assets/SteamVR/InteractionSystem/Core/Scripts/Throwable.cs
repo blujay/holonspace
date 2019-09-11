@@ -47,7 +47,7 @@ namespace Valve.VR.InteractionSystem
 
 		public UnityEvent onPickUp;
         public UnityEvent onDetachFromHand;
-        public UnityEvent<Hand> onHeldUpdate;
+        public HandEvent onHeldUpdate;
 
         
         protected RigidbodyInterpolation hadInterpolation = RigidbodyInterpolation.None;
@@ -93,7 +93,7 @@ namespace Valve.VR.InteractionSystem
 
                 GrabTypes bestGrabType = hand.GetBestGrabbingType();
 
-                if ( bestGrabType == GrabTypes.Pinch )
+                if ( bestGrabType != GrabTypes.None )
 				{
 					if (rigidbody.velocity.magnitude >= catchingThreshold)
 					{
@@ -122,7 +122,7 @@ namespace Valve.VR.InteractionSystem
         {
             GrabTypes startingGrabType = hand.GetGrabStarting();
             
-            if (startingGrabType == GrabTypes.Pinch)
+            if (startingGrabType != GrabTypes.None)
             {
 				hand.AttachObject( gameObject, startingGrabType, attachmentFlags, attachmentOffset );
                 hand.HideGrabHint();

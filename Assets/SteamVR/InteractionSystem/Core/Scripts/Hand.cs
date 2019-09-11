@@ -1286,6 +1286,12 @@ namespace Valve.VR.InteractionSystem
             }
         }
 
+        public void ResetAttachedTransform(AttachedObject attachedObject)
+        {
+            attachedObject.attachedObject.transform.position = TargetItemPosition(attachedObject);
+            attachedObject.attachedObject.transform.rotation = TargetItemRotation(attachedObject);
+        }
+
         protected Vector3 TargetItemPosition(AttachedObject attachedObject)
         {
             if (attachedObject.interactable != null && attachedObject.interactable.skeletonPoser != null && HasSkeleton())
