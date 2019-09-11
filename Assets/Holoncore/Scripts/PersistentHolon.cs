@@ -45,12 +45,12 @@ public class PersistentHolon : MonoBehaviour {
 
         Debug.LogFormat("Setting guid for {0} to {1}, prefab path {2}", name, guid, path);
 
-        if(!UnityEditor.PrefabUtility.IsPartOfPrefabAsset(gameObject)){
-            UnityEditor.PrefabUtility.ApplyPrefabInstance(gameObject,UnityEditor.InteractionMode.AutomatedAction);
-        }
-        else {
-            UnityEditor.AssetDatabase.SaveAssets();
-        }
+        // if(!UnityEditor.PrefabUtility.IsPartOfPrefabAsset(gameObject)){
+        //     UnityEditor.PrefabUtility.ApplyPrefabInstance(gameObject,UnityEditor.InteractionMode.AutomatedAction);
+        // }
+        // else {
+        //     UnityEditor.AssetDatabase.SaveAssets();
+        // }
     }
 
 #endif

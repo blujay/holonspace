@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/start.unity
+    path: Assets/Holoncore/Scenes/start.unity
     guid: 55cb7310b5f789440b3087c46e636e92
   - enabled: 1
     path: Assets/_Scenes/scene-Base.unity
