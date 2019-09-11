@@ -812,6 +812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  twoHandGrab: 0
   otherHand: {fileID: 0}
   handType: 0
   trackedObject: {fileID: 0}
@@ -912,6 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  twoHandGrab: 0
   otherHand: {fileID: 11401046}
   handType: 1
   trackedObject: {fileID: 0}
@@ -1040,6 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  twoHandGrab: 0
   otherHand: {fileID: 11450312}
   handType: 2
   trackedObject: {fileID: 0}
@@ -1272,7 +1275,7 @@ MonoBehaviour:
   actionSet:
     actionSetPath: /actions/default
   forSources: 0
-  disableAllOtherActionSets: 0
+  disableAllOtherActionSets: 1
   activateOnStart: 1
   deactivateOnDestroy: 1
 --- !u!1 &171246
