@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.Playables;
 
 
-public class TriggerEnterToContinue : MonoBehaviour
+public class PauseTimeline : MonoBehaviour
 {
     public PlayableDirector Timeline;
-    public float ResumeAfterSeconds;
+    public float ResumeAfterSeconds = 9999;
 
     private double _originalTimelineSpeed;
 
@@ -17,12 +17,7 @@ public class TriggerEnterToContinue : MonoBehaviour
         Invoke(nameof(Unpause), ResumeAfterSeconds);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Unpause();
-    }
-
-    private void Unpause()
+    public void Unpause()
     {
         CancelInvoke();
         Timeline.playableGraph.GetRootPlayable(0).SetSpeed(_originalTimelineSpeed);
