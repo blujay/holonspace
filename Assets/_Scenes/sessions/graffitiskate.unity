@@ -319,7 +319,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17264
+  m_Name: pb_Mesh-271446
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1435,7 +1435,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17268
+  m_Name: pb_Mesh-271450
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5154,7 +5154,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17272
+  m_Name: pb_Mesh-271454
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6587,7 +6587,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17276
+  m_Name: pb_Mesh-271458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27139,53 +27139,25 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 464063684}
+    - target: {fileID: 7551813623028273629, guid: 3acf8bf587e0e0d43bb1d3af114ad44a,
+        type: 3}
+      propertyPath: levelName
+      value: sunglasses-selector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3acf8bf587e0e0d43bb1d3af114ad44a, type: 3}
---- !u!1 &1865282506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7961387426142492094, guid: 3acf8bf587e0e0d43bb1d3af114ad44a,
+--- !u!114 &1865282507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7551813623028273629, guid: 3acf8bf587e0e0d43bb1d3af114ad44a,
     type: 3}
   m_PrefabInstance: {fileID: 1865282505}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1865282507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865282506}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5a6a70209b6e6345bfe18b02314a54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: start
-  internalProcessPath: 
-  internalProcessArgs: 
-  loadAdditive: 0
-  loadAsync: 1
-  loadingScreen: {fileID: 0}
-  progressBarEmpty: {fileID: 0}
-  progressBarFull: {fileID: 0}
-  loadingScreenWidthInMeters: 6
-  progressBarWidthInMeters: 3
-  loadingScreenDistance: 0
-  loadingScreenTransform: {fileID: 0}
-  progressBarTransform: {fileID: 0}
-  front: {fileID: 0}
-  back: {fileID: 0}
-  left: {fileID: 0}
-  right: {fileID: 0}
-  top: {fileID: 0}
-  bottom: {fileID: 0}
-  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  showGrid: 0
-  fadeOutTime: 0.5
-  fadeInTime: 0.5
-  postLoadSettleTime: 0
-  loadingScreenFadeInTime: 1
-  loadingScreenFadeOutTime: 0.25
-  autoTriggerOnEnable: 0
 --- !u!1001 &1875884926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27716,7 +27688,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17274
+  m_Name: pb_Mesh-271456
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

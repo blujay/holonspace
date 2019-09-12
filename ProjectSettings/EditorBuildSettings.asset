@@ -6,21 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Holoncore/Scenes/start.unity
-    guid: 55cb7310b5f789440b3087c46e636e92
-  - enabled: 1
-    path: Assets/_Scenes/scene-Base.unity
-    guid: 044e389a076d9634db97077c55841aa7
-  - enabled: 1
-    path: Assets/_Scenes/scene-change.unity
-    guid: 69d8a83727b197045bffad028b6119a5
+    path: Assets/_Scenes/sunglasses-selector.unity
+    guid: 1bbb3dde60884ed4f8f342355638f32e
   - enabled: 1
     path: Assets/_Scenes/sessions/graffitiskate.unity
     guid: eb8cee473ac370d479abdc24c5aa2501
-  - enabled: 1
-    path: Assets/_Scenes/sceneA.unity
-    guid: 3bac37be4aa9649478bfa6b89632f319
-  - enabled: 1
-    path: Assets/_Scenes/sceneB.unity
-    guid: c23654306ddab3e48bbc6f1872af95ed
   m_configObjects: {}
