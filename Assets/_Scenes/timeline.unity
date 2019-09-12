@@ -12906,10 +12906,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 90f490161367da34c9416a4fbfe86d78, type: 2}
-    - {fileID: 11400000, guid: 27d8e3f1027e6d946b75b9e19dfbecba, type: 2}
-    - {fileID: 11400000, guid: 396cd3365598e91419e01bfa58de0232, type: 2}
-    - {fileID: 11400000, guid: 19b6f256b5418434186846d726c29a0c, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -25727,8 +25727,6 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 3035808655975132579, guid: 0ca8dc43439509d4fb5e4e5f7691408f, type: 2}
     value: {fileID: 1569496049}
-  - key: {fileID: -9097164424668748789, guid: 0ca8dc43439509d4fb5e4e5f7691408f, type: 2}
-    value: {fileID: 891799294}
   m_ExposedReferences:
     m_References:
     - 1ebf46836f0f3844dad4ee4120718f73: {fileID: 189253944}
