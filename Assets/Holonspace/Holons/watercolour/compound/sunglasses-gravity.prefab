@@ -2938,7 +2938,8 @@ GameObject:
   - component: {fileID: 6200303194668303765}
   - component: {fileID: 4124177921100808238}
   - component: {fileID: 5459705286588254214}
-  - component: {fileID: 7551813623028273629}
+  - component: {fileID: 3258934525982441428}
+  - component: {fileID: 8823173925541720374}
   m_Layer: 0
   m_Name: sunglasses-gravity
   m_TagString: Untagged
@@ -3083,17 +3084,6 @@ MonoBehaviour:
   onDetachFromHand:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7551813623028273629}
-        m_MethodName: Trigger
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 4862691564383198400}
         m_MethodName: set_isKinematic
         m_Mode: 6
@@ -3126,7 +3116,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.53822833, y: 0.46327204, z: 0.44195008}
   m_Center: {x: -0.016142365, y: -0.16756222, z: -0.011959923}
---- !u!114 &7551813623028273629
+--- !u!114 &3258934525982441428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3165,6 +3155,18 @@ MonoBehaviour:
   loadingScreenFadeInTime: 1
   loadingScreenFadeOutTime: 0.25
   autoTriggerOnEnable: 0
+--- !u!114 &8823173925541720374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961387426142492094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6039382957edd8049993fe6dc0e791fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7961387426401829305
 GameObject:
   m_ObjectHideFlags: 0
