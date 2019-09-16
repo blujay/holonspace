@@ -19200,6 +19200,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2456032884497126555, guid: 9de0c8908315d4441941f84cc3ec3fd8,
+        type: 3}
+      propertyPath: m_TagString
+      value: holonspace
+      objectReference: {fileID: 0}
     - target: {fileID: 322724938786096391, guid: 9de0c8908315d4441941f84cc3ec3fd8,
         type: 3}
       propertyPath: m_LocalPosition.x

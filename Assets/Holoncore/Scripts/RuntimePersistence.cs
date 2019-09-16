@@ -15,9 +15,12 @@ public class RuntimePersistence : MonoBehaviour
     public RuntimePersistantStorage GetStorage(){
         return storage;
     }
+
+    static GameObject holonSpaceObject;
     Transform holonParent;
 
     void Start(){
+        holonSpaceObject = GameObject.FindGameObjectWithTag("holonspace");
     }
 
     void Update(){
@@ -83,6 +86,7 @@ public class RuntimePersistence : MonoBehaviour
                 var prefabInstance = UnityEditor.PrefabUtility.InstantiatePrefab( asset );
                 prefabInstance.name = holonData.name;
                 var gameObject = prefabInstance as GameObject;
+                gameObject.transform.SetParent(holonSpaceObject.gameObject.transform);
                 gameObject.GetComponent<PersistentHolon>().SetDecoratorData( holonData.decoratorData );
                 EditorSceneManager.MarkAllScenesDirty();
             }
