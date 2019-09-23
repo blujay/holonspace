@@ -17,7 +17,6 @@ public class RuntimePersistence : MonoBehaviour
     }
 
     static GameObject holonSpaceObject;
-    Transform holonParent;
 
     void Start(){
         holonSpaceObject = GameObject.FindGameObjectWithTag("holonspace");
