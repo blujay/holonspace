@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - projectile
+  - FxTemporaire
   - holonspace
+  - shape
   layers:
   - Default
   - TransparentFX
@@ -14,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - floor
   - Cloning
+  - 
+  - 
   - 
   - 
   - 

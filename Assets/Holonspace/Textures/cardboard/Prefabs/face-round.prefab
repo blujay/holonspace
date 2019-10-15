@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 2187545329852512575}
   - component: {fileID: 2187545329852512574}
   - component: {fileID: 2187545329852512545}
+  - component: {fileID: 997333912202133839}
   m_Layer: 0
   m_Name: face-round
   m_TagString: Untagged
@@ -2130,18 +2131,12 @@ MonoBehaviour:
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   onHeldUpdate:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Valve.VR.InteractionSystem.HandEvent, SteamVR, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   interactable: {fileID: 0}
 --- !u!114 &2187545329852512574
 MonoBehaviour:
@@ -2173,3 +2168,15 @@ MonoBehaviour:
   guid: 
   decoratorComponents:
   - {fileID: 2187545329852512544}
+--- !u!114 &997333912202133839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2187545329852512550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19ec7e10e0dfaf4ab9502814ddc8745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
