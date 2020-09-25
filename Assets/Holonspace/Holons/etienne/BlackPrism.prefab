@@ -62,6 +62,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,6 +74,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -246,7 +248,7 @@ MonoBehaviour:
   - {x: 0.4819079, y: 0.8285865, z: -0.28497243, w: -1}
   - {x: 0.48218986, y: 0.74784404, z: -0.4563136, w: -1}
   - {x: 0.48218986, y: 0.74784404, z: -0.4563136, w: -1}
-  - {x: 0.38734263, y: 0.37502906, z: -0.8422107, w: -1}
+  - {x: 0.3873426, y: 0.37502906, z: -0.8422107, w: -1}
   - {x: -0.9994003, y: -0.014845674, z: 0.0312847, w: -1}
   - {x: -0.99905705, y: 0.018613502, z: -0.03922475, w: -1}
   - {x: -0.99905705, y: 0.018613502, z: -0.03922475, w: -1}
@@ -273,9 +275,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!114 &7431382769783127222
 MonoBehaviour:
@@ -396,13 +398,12 @@ MonoBehaviour:
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  onHeldUpdate:
+    m_PersistentCalls:
+      m_Calls: []
   interactable: {fileID: 0}
 --- !u!114 &8221275875711383908
 MonoBehaviour:

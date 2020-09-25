@@ -9,7 +9,6 @@ namespace Valve.VR.InteractionSystem.Sample
 
         public GameObject prefab;
         public Transform spawnPoint;
-        private Hand hand;
         
         public void Clone()
         {

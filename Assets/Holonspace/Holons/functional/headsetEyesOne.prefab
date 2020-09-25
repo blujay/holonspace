@@ -105,6 +105,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -349,25 +350,25 @@ MonoBehaviour:
     m_TextureGroup: 2
   m_SharedVertices:
   - m_Vertices: 000000003500000038000000
-  - m_Vertices: 0a000000370000003a000000
   - m_Vertices: 010000001c00000039000000
-  - m_Vertices: 0c0000001e0000003b000000
   - m_Vertices: 02000000140000001d000000
-  - m_Vertices: 12000000160000001f000000
   - m_Vertices: 030000001500000018000000
-  - m_Vertices: 13000000170000001a000000
   - m_Vertices: 040000001900000024000000
-  - m_Vertices: 0e0000001b00000026000000
   - m_Vertices: 050000002000000025000000
-  - m_Vertices: 110000002200000027000000
   - m_Vertices: 060000002100000028000000
-  - m_Vertices: 10000000230000002a000000
   - m_Vertices: 07000000290000002c000000
-  - m_Vertices: 0f0000002b0000002e000000
   - m_Vertices: 080000002d00000030000000
-  - m_Vertices: 0d0000002f00000032000000
   - m_Vertices: 090000003100000034000000
+  - m_Vertices: 0a000000370000003a000000
   - m_Vertices: 0b0000003300000036000000
+  - m_Vertices: 0c0000001e0000003b000000
+  - m_Vertices: 0d0000002f00000032000000
+  - m_Vertices: 0e0000001b00000026000000
+  - m_Vertices: 0f0000002b0000002e000000
+  - m_Vertices: 10000000230000002a000000
+  - m_Vertices: 110000002200000027000000
+  - m_Vertices: 12000000160000001f000000
+  - m_Vertices: 13000000170000001a000000
   m_SharedTextures:
   - m_Vertices: 2e0000002b000000
   - m_Vertices: 2c00000029000000
@@ -578,9 +579,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!114 &-2626796326002087207
 MonoBehaviour:
@@ -686,18 +687,12 @@ MonoBehaviour:
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   onHeldUpdate:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Valve.VR.InteractionSystem.HandEvent, SteamVR, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   interactable: {fileID: 0}
 --- !u!114 &1641144099412099901
 MonoBehaviour:

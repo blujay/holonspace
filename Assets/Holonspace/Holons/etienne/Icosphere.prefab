@@ -62,6 +62,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,6 +74,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -578,24 +580,24 @@ MonoBehaviour:
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
-  - {x: 0.060970176, y: -0.6746475, z: 0.7356177, w: -1}
-  - {x: 0.060970176, y: -0.6746475, z: 0.7356177, w: -1}
-  - {x: 0.060970176, y: -0.6746475, z: 0.7356177, w: -1}
+  - {x: 0.060970154, y: -0.6746475, z: 0.7356177, w: -1}
+  - {x: 0.060970154, y: -0.6746475, z: 0.7356177, w: -1}
+  - {x: 0.060970154, y: -0.6746475, z: 0.7356177, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 0.70710653, y: -0.00000041597144, z: -0.707107, w: -1}
-  - {x: 0.70710653, y: -0.00000041597144, z: -0.707107, w: -1}
-  - {x: 0.70710653, y: -0.00000041597144, z: -0.707107, w: -1}
+  - {x: 0.70710653, y: -0.00000043842763, z: -0.707107, w: -1}
+  - {x: 0.70710653, y: -0.00000043842763, z: -0.707107, w: -1}
+  - {x: 0.70710653, y: -0.00000043842763, z: -0.707107, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
   - {x: 0, y: 0, z: -1, w: -1}
-  - {x: -0.70710635, y: -0.0000008679351, z: 0.7071072, w: -1}
-  - {x: -0.70710635, y: -0.0000008679351, z: 0.7071072, w: -1}
-  - {x: -0.70710635, y: -0.0000008679351, z: 0.7071072, w: -1}
+  - {x: -0.70710635, y: -0.0000008454788, z: 0.7071072, w: -1}
+  - {x: -0.70710635, y: -0.0000008454788, z: 0.7071072, w: -1}
+  - {x: -0.70710635, y: -0.0000008454788, z: 0.7071072, w: -1}
   - {x: -0.37474483, y: -0.91601163, z: -0.1431398, w: -1}
   - {x: -0.37474483, y: -0.91601163, z: -0.1431398, w: -1}
   - {x: -0.37474483, y: -0.91601163, z: -0.1431398, w: -1}
@@ -660,9 +662,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!114 &9135006578893782417
 MonoBehaviour:
@@ -798,11 +800,10 @@ MonoBehaviour:
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  onHeldUpdate:
+    m_PersistentCalls:
+      m_Calls: []
   interactable: {fileID: 0}

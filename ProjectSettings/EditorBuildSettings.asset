@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Holoncore/Scenes/start.unity
+    guid: 55cb7310b5f789440b3087c46e636e92
+  - enabled: 1
     path: Assets/_Scenes/demo.unity
     guid: 198d91e62bd38fd48b356bf9af475811
   - enabled: 1
@@ -14,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Holonspace/Scenes/sessions/graffitiskate.unity
     guid: eb8cee473ac370d479abdc24c5aa2501
+  - enabled: 1
+    path: Assets/Holonspace/Scenes/sessions/victoriana.unity
+    guid: cf1a06c3c235a6140980513ffbf43abd
   m_configObjects: {}
