@@ -26,6 +26,11 @@ namespace Valve.VR
         public event ChangeHandler onChange
         { add { sourceMap[SteamVR_Input_Sources.Any].onChange += value; } remove { sourceMap[SteamVR_Input_Sources.Any].onChange -= value; } }
 
+        public Vector2 GetAxis(SteamVR_Input_Sources hand)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary><strong>[Shortcut to: SteamVR_Input_Sources.Any]</strong> This event fires whenever the action is updated</summary>
         public event UpdateHandler onUpdate
         { add { sourceMap[SteamVR_Input_Sources.Any].onUpdate += value; } remove { sourceMap[SteamVR_Input_Sources.Any].onUpdate -= value; } }

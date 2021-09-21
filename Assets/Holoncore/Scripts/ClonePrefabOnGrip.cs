@@ -6,16 +6,16 @@ using System;
 namespace Valve.VR.InteractionSystem.Sample
 {
     public class ClonePrefabOnGrip : MonoBehaviour
-    
-    {   
+
+    {
         public SteamVR_Action_Boolean cloneAction;
 
         private Hand hand;
         private Transform parentObj;
-        
+
         //public GameObject prefab;
         //public Transform spawnPoint;
-        
+
         private void OnEnable()
         {
             // TODO AndyB
@@ -26,7 +26,7 @@ namespace Valve.VR.InteractionSystem.Sample
                 var hands = FindObjectsOfType<Hand>();
                 foreach (var h in hands)
                 {
-                    if (h.handType==SteamVR_Input_Sources.RightHand)
+                    if (h.handType == SteamVR_Input_Sources.RightHand)
                     {
                         hand = h;
                         break;
@@ -35,7 +35,7 @@ namespace Valve.VR.InteractionSystem.Sample
 
 
             }
-            
+
             if (cloneAction == null)
             {
                 Debug.LogError("<b>[SteamVR Interaction]</b> Don't clone");
@@ -47,7 +47,7 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private void OnCloneActionChange(SteamVR_Action_Boolean actionIn, SteamVR_Input_Sources inputSource, bool newValue)
         {
-            
+
             if (newValue)
             {
                 Clone();
@@ -60,9 +60,9 @@ namespace Valve.VR.InteractionSystem.Sample
             GrabTypes startingGrabType = hand.GetGrabStarting();
             if (startingGrabType == GrabTypes.Grip)
             {
-                if (hand.hoveringInteractable.gameObject==this.gameObject)
+                if (hand.hoveringInteractable.gameObject == this.gameObject)
                 {
-                    
+
                     GameObject clone = GameObject.Instantiate<GameObject>(gameObject);
                     clone.transform.position = (transform.position);
                     clone.transform.rotation = transform.localRotation;

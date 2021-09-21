@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Holonspace/Scenes/sessions/victoriana.unity
     guid: cf1a06c3c235a6140980513ffbf43abd
+  - enabled: 1
+    path: Assets/Holonspace/Scenes/sessions/gilgamesh.unity
+    guid: 37b1ffdfa79018b43ae89ef3d2be7264
+  - enabled: 1
+    path: Assets/_Scenes/sunglasses-selector.unity
+    guid: 7f3fa340d80f7214fb5c74abb1a1f0a4
   m_configObjects: {}
